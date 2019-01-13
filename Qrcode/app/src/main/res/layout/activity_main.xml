@@ -17,12 +17,20 @@
         style="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_gravity="center_horizontal" />
 
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <EditText
         android:id="@+id/edt_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="Masukan isi qrcode" />
+
+    </android.support.design.widget.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,5 +58,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Image"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
